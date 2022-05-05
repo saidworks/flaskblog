@@ -1,2 +1,3 @@
 https://realpython.com/python-sqlite-sqlalchemy/
 https://www.programcreek.com/python/example/58129/sqlalchemy.Text
+https://github.com/pallets/flask/tree/2.1.2/examples/tutorial/flaskr
