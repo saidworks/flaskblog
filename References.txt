@@ -1,0 +1,2 @@
+https://realpython.com/python-sqlite-sqlalchemy/
+https://www.programcreek.com/python/example/58129/sqlalchemy.Text

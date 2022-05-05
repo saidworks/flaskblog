@@ -1,0 +1,112 @@
+/* Flowers and Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Send+Flowers&display=swap');
+@import "resetter.css";
+
+:root{
+    --primary-color: #30343F;
+    --secondary-color: #FAFAFF;
+    --tertiary-color: #E4D9FF;
+    --border-color: #273469;
+    --alternative-color: #1E2749;
+}
+
+*{ 
+ box-sizing: border-box;
+}
+
+html {
+    /* change value of rem */
+    font-size: 10px; 
+}
+h1 {
+    font-family: 'Send Flowers', sans-serif;
+    font-size: 5rem;
+}
+
+.card.appear h1{
+    transform: rotate(360deg);
+    transition: transform ease-in-out 0.5s;
+}
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family:  'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 100vh;
+    overflow: hidden;
+}
+
+img{
+    max-width: 100%;
+}
+
+.card{
+    box-shadow : 0 0.2rem 1rem rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 25vmin;
+    height: 13vmax; 
+
+    
+}
+.card.appear{
+    height: 27vmax;
+}
+
+.card-header{
+    height: 20rem;
+}
+
+.card-header img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-content {
+   background-color: var(--alternative-color); 
+   padding: 3rem;
+   transform: translateY(100%);
+   transition: transform 0.5s ease-in;
+}
+
+.card.appear .card-content{
+    transform: translateY(0%);
+}
+
+
+.card-title {
+    height:2rem;
+    margin: 0;
+}
+
+.card-excerpt{
+    color:var(--secondary-color);
+}
+
+.author{
+    display: flex;
+}
+
+.profile-img{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 4rem;
+    width: 4rem;
+}
+
+.author-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1rem;
+    width: 10rem;
+}
+
+.author-info small{
+    color: var(--tertiary-color);
+    margin-top: 0.5rem;
+}
+
