@@ -3,4 +3,5 @@ https://www.programcreek.com/python/example/58129/sqlalchemy.Text
 https://github.com/pallets/flask/tree/2.1.2/examples/tutorial/flaskr
 https://realpython.com/flask-by-example-part-1-project-setup/
 https://medium.com/analytics-vidhya/flask-development-part-6-crud-app-d3413cd94363
+https://realpython.com/flask-by-example-part-1-project-setup/
 Pythonanywhere possible?
