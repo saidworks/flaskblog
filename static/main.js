@@ -1,9 +1,9 @@
-const card = document.querySelector('.card');
+const cards = document.querySelectorAll('.card');
 
-card.addEventListener('mouseenter',()=>{
+cards.forEach( card =>{card.addEventListener('mouseenter',()=>{
     card.classList.add("appear")
 })
 
 card.addEventListener('mouseleave',()=>{
     card.classList.remove("appear")
-})
+})})

@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>My Flask Blog - Create a post</title>
+    <title>My Flask Blog - Update a post</title>
 </head>
 <body>
    
         <form action="" method="POST">
-            <h1>Create Post</h1>
+            <h1>Update Post</h1>
             <div class="form-control">
-                <input name="title" type="text" required>
+                <input name="title" type="text" value="{{post.title}}" required>
                 <label>Title</label>
             </div>
             <div class="form-control">
-                <input name="author" type="text" required>
+                <input name="author" type="text" value="{{post.author}}" required>
                 <label>Author</label>
             </div>
             <div class="form-control">
                 <label>Content</label>
-                <textarea name="content" id="textarea" cols="30" rows="20"></textarea>
+                <textarea name="content" id="textarea" cols="30" rows="20" placeholder="{{post.content}}" value="{{post.content}}"></textarea>
             </div>
             <div class="form-control">
-                <input type="date" id="start" name="date" min="2022-05-06" max="2100-12-31">
+                <input type="date" id="start" name="date"
+                                value="{{post.date}}">
                 <label>Date</label>
             </div>
 
