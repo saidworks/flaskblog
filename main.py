@@ -51,7 +51,9 @@ def retreivePost(id):
 def updatePost(id):
     post = PostModel.query.filter_by(post_id=id).first()
     print(post)
-    if request.method == "POST":
+    if request.method == "GET":
+        return render_template('update.html', post=post)
+    elif request.method == "POST":
         if post:
             db.session.delete(post)
             db.session.commit()
@@ -62,10 +64,10 @@ def updatePost(id):
             post = PostModel(id, title, content, date, author)
             db.session.add(post)
             db.session.commit()
-            redirect(f"/{id}")
+            # redirect(f"/{id}")
+            return render_template('post.html', post=post)
         else:
             return f"Post with id ={id} does not exist"
-    return render_template('post.html', post=post)
 
 
 @app.route('/<int:id>/delete', methods=['GET', 'POST'])
