@@ -33,7 +33,6 @@ body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family:  'Montserrat', sans-serif;
-   
 
 }
 
@@ -201,4 +200,105 @@ form{
 
 textarea{
     width: 50vw;
+}
+
+
+/* nav bar */
+
+
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    background-color: var(--primary-color);
+    font-size: 2rem;
+    width: 4rem;
+    transition: width 0.6s linear;
+    margin: 1% 0% 1% 75vmin;
+}
+
+nav.active{
+    width: 50rem;
+}
+
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    transition: width 0.6s linear;
+}
+
+nav.active ul{
+    width: 100%;
+}
+
+nav ul li{
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.6s linear, opacity 0.6s linear;
+} 
+
+nav.active ul li{
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+
+nav ul a {
+    position: relative;
+    color: var(--tertiary-color);
+    font-size: larger;
+    text-decoration: none;
+    margin: 0 1rem;
+     
+}
+
+.icon{
+    background-color: var(--primary-color);
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    height: 3rem;
+    width: 3rem;  
+}
+
+.icon .line {
+    background-color: var(--secondary-color);
+    height: 0.2rem;
+    width: 2rem;
+    position: absolute;
+    top: 1rem;
+    transition: transform 0.7s linear;
+    color: var(--tertiary-color);
+}
+
+.icon .line2{
+    top: auto;
+    bottom:1rem;
+    color: var(--tertiary-color);
+}
+
+nav.active .icon .line1{
+    transform: rotate(-405deg) translateY(0.6rem);
+}
+nav.active .icon .line2{
+    transform: rotate(405deg) translateY(-0.6rem);
+}
+
+.about{
+    top: -50%;
+    font-size: large;
+    width: 80%;
+    margin: 2%;
+}
+
+.card>a{
+    text-decoration: none;
+    color: var(--secondary-color);
 }

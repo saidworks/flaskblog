@@ -81,3 +81,8 @@ def delete(id):
         else:
             return redirect('/')
     return render_template('delete.html', post=post)
+
+
+@app.route('/about', methods=['GET'])
+def about():
+    return render_template('about.html')
