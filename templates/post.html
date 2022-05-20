@@ -10,9 +10,20 @@
     <title>My Flask Blog</title>
 </head>
 <body>
-<div class="container post">
-
-    <div class="card">
+<h1 class="title">My Flask Blog</h1>
+<nav class="active" id="nav">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/create">Create Post</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <button class="icon" id="toggle">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+    </button>
+</nav>
+<div class=" post">
         <h1 class="title">{{post.title}}</h1>
         <div class="card-header animated-bg" id="header">
             <img src="https://images.unsplash.com/photo-1650913543044-b0b5f75064e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="A car image">
@@ -39,9 +50,12 @@
                 </div>
             </div>
         </div>
+    <div class="buttons">
+        <button class="btn btn-post"><a href="{{post.post_id}}/update">Update</a></button>
+        <button class="btn btn-post"><a href="{{post.post_id}}/delete">Delete</a></button>
     </div>
-
 </div>
+
     <script src="{{ url_for('static', filename='main.js') }}"></script>
 </body>
 </html>

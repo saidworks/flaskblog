@@ -33,7 +33,8 @@ body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family:  'Montserrat', sans-serif;
-
+    height: 100vh;
+    overflow: hidden;
 }
 
 img{
@@ -301,4 +302,31 @@ nav.active .icon .line2{
 .card>a{
     text-decoration: none;
     color: var(--secondary-color);
+}
+
+
+
+/*for post */
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    box-shadow : 0 0.2rem 1rem rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 100vmin;
+    height: fit-content; 
+    margin: 1% auto;
+}
+.buttons{
+    display: block;
+    align-items: center;
+    width: 50%;
+    margin: 15% auto;
+}
+
+.btn-post{
+    display: absolute;
+    margin: 2rem;
 }
