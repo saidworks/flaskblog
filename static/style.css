@@ -34,7 +34,6 @@ body {
     color: var(--secondary-color);
     font-family:  'Montserrat', sans-serif;
     height: 100vh;
-    overflow: hidden;
 }
 
 img{
@@ -122,10 +121,10 @@ img{
     justify-content: center;
     align-items: center;
 }
-form{
+.form{
     margin: 5% auto;
     width: 50vw;
-
+    height: fit-content;
 }
 
 .btn {
