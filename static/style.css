@@ -311,29 +311,23 @@ nav.active .icon .line2{
 .post {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100vmin;
+    /* border: white 1px solid; */
     box-shadow : 0 0.2rem 1rem rgba(0,0,0,0.2);
     border-radius: 1rem;
-    overflow: hidden;
-    width: 100vmin;
-    height: fit-content; 
+    height: 70vmin; 
     margin: 1% auto;
 }
-.buttons{
-    display: block;
-    align-items: center;
-    width: 50%;
-    margin: 15% auto;
-}
+
 
 .btn-post{
-    display: absolute;
+    display: block;
     margin: 2rem;
     color: var(--secondary-color);
     background-color: var(--alternative-color);
 }
 
-a>.btn-post{
+.buttons>a{
     text-decoration: none;
      color: var(--secondary-color);
 }
@@ -345,4 +339,64 @@ a>.btn-post{
 
 a>.btn-post:hover{
      color: var(--alternative-color);
+}
+
+
+
+.post-header{
+    height: 20vmin;
+}
+
+.post-header img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.post-content {
+   background-color: var(--alternative-color); 
+   padding: 3rem;
+   height: max-content;
+}
+
+
+
+.post-title {
+    height:2rem;
+    margin: 0;
+}
+
+.post-excerpt{
+    color:var(--secondary-color);
+}
+
+.author{
+    display: flex;
+}
+
+.profile-img{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 4rem;
+    width: 4rem;
+}
+
+.author-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 1rem;
+    width: 10rem;
+}
+
+.author-info small{
+    color: var(--tertiary-color);
+    margin-top: 0.5rem;
+}
+
+.buttons{
+    display: block;
+    align-items: center;
+    width: 50%;
+    margin: 1% auto;
 }
