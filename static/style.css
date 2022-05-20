@@ -329,4 +329,20 @@ nav.active .icon .line2{
 .btn-post{
     display: absolute;
     margin: 2rem;
+    color: var(--secondary-color);
+    background-color: var(--alternative-color);
+}
+
+.btn-post>a{
+    text-decoration: none;
+     color: var(--secondary-color);
+}
+
+.btn-post:hover{
+    color:var(--alternative-color);
+    background-color: var(--secondary-color);
+}
+
+.btn-post:hover>a{
+     color: var(--alternative-color);
 }
