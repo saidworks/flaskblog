@@ -116,7 +116,7 @@ img{
 /* form styling */
 
 .container {
-     height : 100vh;
+    height : 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,7 +314,7 @@ nav.active .icon .line2{
     /* border: white 1px solid; */
     box-shadow : 0 0.2rem 1rem rgba(0,0,0,0.2);
     border-radius: 1rem;
-    height: 70vmin; 
+    height: fit-content; 
     margin: 1% auto;
 }
 
