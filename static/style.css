@@ -333,7 +333,7 @@ nav.active .icon .line2{
     background-color: var(--alternative-color);
 }
 
-.btn-post>a{
+a>.btn-post{
     text-decoration: none;
      color: var(--secondary-color);
 }
@@ -343,6 +343,6 @@ nav.active .icon .line2{
     background-color: var(--secondary-color);
 }
 
-.btn-post:hover>a{
+a>.btn-post:hover{
      color: var(--alternative-color);
 }
