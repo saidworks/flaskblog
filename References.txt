@@ -16,7 +16,8 @@ https://pusher.com/tutorials/flask-vue-comments/
 https://www.reddit.com/r/flask/comments/r1saph/ideas_for_making_a_comment_section_for_every_post/
 https://www.digitalocean.com/community/tutorials/processing-incoming-request-data-in-flask
 
+Login Register Logout => to be added
 
-Flask Web Development book => to build on for complexity
+Flask Web Development book => use to build on for complexity 
 
-Pythonanywhere for deployment possible?
+check Pythonanywhere for deployment?
