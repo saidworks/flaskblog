@@ -9,7 +9,7 @@ To get all dependencies installed, clone this repository and run the server from
 ```sh
     pip install -r /path/to/requirements.txt
     $env:FLASK_APP="main"
-    flask run
+    python -m flask run
 ```
 
 ## Features
